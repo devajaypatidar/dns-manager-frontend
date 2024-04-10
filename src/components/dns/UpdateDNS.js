@@ -12,7 +12,7 @@ const UpdateDNSRecord = () => {
     setError('');
 
     try {
-      const response = await axios.post('https://dns-manager-ohfc.onrender.com/update', {
+      const response = await axios.post('https://dns-manager-ohfc.onrender.com/dns/update', {
         hostedZoneId,
         dnsRecord: dnsRecords
       });

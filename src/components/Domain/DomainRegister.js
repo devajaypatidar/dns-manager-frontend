@@ -14,7 +14,7 @@ const DomainRegistration = () => {
   const registerDomain = async () => {
     setLoading(true);
     try {
-      const response = await axios.post('https://dns-manager-ohfc.onrender.com/register', {
+      const response = await axios.post('https://dns-manager-ohfc.onrender.com/domain/register', {
         domainName: domain
       });
       console.log(response);

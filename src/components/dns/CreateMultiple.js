@@ -12,7 +12,7 @@ const CreateMultipleDNSRecords = () => {
     setError('');
 
     try {
-      const response = await axios.post('https://dns-manager-ohfc.onrender.com/create/multiple', {
+      const response = await axios.post('https://dns-manager-ohfc.onrender.com/dns/create/multiple', {
         hostedZoneId,
         dnsRecord: dnsRecords
       });
